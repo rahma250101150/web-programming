@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahma's Tech & Web Blog</title>
+    <meta name="description" content="A professional semantic blog exploring web programming, HTML5 semantics, and CSS fundamentals.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=64" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-area">
+            <h1>DevJourney Blog</h1>
+            <p>Exploring Web Development, Semantics & Modern Design</p>
+        </div>
+        <!-- Primary Navigation -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link active-link">Blog</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content & Sidebar Layout Wrapper -->
+    <div class="container">
+        
+        <!-- Main Content Area -->
+        <main>
+            <!-- First Article -->
+            <article class="blog-card featured-post">
+                <h2>Mastering HTML5 Semantic Tags</h2>
+                <p class="post-date">Posted on <time datetime="2026-03-01">1 March 2026</time> by <strong>Rahma</strong></p>
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&h=400&fit=crop" alt="Code editor displaying clean HTML5 syntax" width="700" height="350">
+                <p>Semantic HTML introduces tags that clearly describe their meaning to both the browser and the developer. Instead of relying endlessly on generic <code>&lt;div&gt;</code> containers, semantic architecture utilizes elements like <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> to enhance accessibility and SEO.</p>
+            </article>
+
+            <!-- Second Article -->
+            <article class="blog-card">
+                <h2>The Power of External CSS & Selectors</h2>
+                <p class="post-date">Posted on <time datetime="2026-03-05">5 March 2026</time> by <strong>Rahma</strong></p>
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&h=400&fit=crop" alt="Laptop showing modern CSS code and web design layout" width="700" height="350">
+                <p>Separating structure from presentation is a cornerstone of modern web development. By leveraging stylesheets, descendant selectors, and robust class hooks, we can maintain clean codebases and update an entire website's appearance instantly from a single file.</p>
+            </article>
+        </main>
+
+        <!-- Sidebar (Aside) -->
+        <aside id="sidebar">
+            <section class="sidebar-box">
+                <h3>Search Articles</h3>
+                <form action="/search" method="get">
+                    <label for="search-input">Search keyword:</label>
+                    <input type="search" id="search-input" name="q" placeholder="Type to search..." required>
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </section>
+
+            <section class="sidebar-box">
+                <h3>Quick Links</h3>
+                <ul class="quick-list">
+                    <li><a href="#about">About the Author</a></li>
+                    <li><a href="#contact">Get in Touch</a></li>
+                    <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                </ul>
+            </section>
+        </aside>
+
+    </div>
+
+    <!-- Footer with Contact Form & Copyright -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Get in Touch With Us</h3>
+            <form action="/submit-contact" method="post" class="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50" autocomplete="name" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                </fieldset>
+            </form>
+            <p class="copyright">&copy; 2026 Rahma. All rights reserved. Built with Semantic HTML5 & External CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
