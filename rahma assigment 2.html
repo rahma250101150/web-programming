@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahma | Professional Portfolio & Schedule</title>
+    <link rel="icon" href="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=64" type="image/x-icon">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #06b6d4;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 4px solid var(--primary);
+            object-fit: cover;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        .banner-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #f1f5f9;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--gray);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--gray);
+            font-size: 0.9rem;
+            background-color: white;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#banner">Workspace</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#goals">Learning Goals</a></li>
+            <li><a href="#schedule">Weekly Schedule</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Personal Webpage</h1>
+        <p>Software Engineering & Web Programming Student</p>
+    </header>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am <strong>Rahma</strong>, a passionate and dedicated student studying Web Programming and Software Engineering. I love transforming complex problems into clean, user-friendly, and visually stunning digital experiences.</p>
+            <img class="profile-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop" alt="Portrait photo of Rahma" width="200" height="200">
+        </section>
+
+        <!-- Responsive Banner Section -->
+        <section id="banner">
+            <h2>Responsive Workspace Banner</h2>
+            <p>This section showcases responsive image handling using modern HTML5 picture elements for optimal performance across all screen sizes.</p>
+            <picture>
+                <source media="(min-width: 800px)" srcset="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=350&fit=crop">
+                <source media="(min-width: 450px)" srcset="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=250&fit=crop">
+                <img class="banner-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=200&fit=crop" alt="Web development workstation setup banner" width="800" height="300" loading="lazy">
+            </picture>
+        </section>
+
+        <!-- Technical Skills (Unordered List) -->
+        <section id="skills">
+            <h2>My Technical Skills</h2>
+            <ul>
+                <li><strong>HTML5 & Semantic Markup:</strong> Crafting accessible and well-structured web documents.</li>
+                <li><strong>Git & GitHub:</strong> Managing version control, branches, and seamless cloud deployments.</li>
+                <li><strong>Operating Systems:</strong> Understanding core architecture, concurrency, and hardware management.</li>
+                <li><strong>Applied Mathematics:</strong> Applying analytical models to solve computational problems.</li>
+            </ul>
+        </section>
+
+        <!-- Learning Goals (Ordered List) -->
+        <section id="goals">
+            <h2>My Learning Steps</h2>
+            <ol>
+                <li>Master HTML5 structural semantics, accessibility, and form validation.</li>
+                <li>Explore advanced CSS3 styling, responsive layouts, and modern UI designs.</li>
+                <li>Build dynamic, high-performance web applications using JavaScript and APIs.</li>
+            </ol>
+        </section>
+
+        <!-- Schedule Table Section -->
+        <section id="schedule">
+            <h2>Weekly Class Schedule</h2>
+            <p>Below is my official structured weekly academic timetable utilizing advanced table semantics, row spanning, and clean layout design.</p>
+            
+            <table>
+                <caption>CET214 - Official Weekly Academic Schedule</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Time Slot</th>
+                        <th scope="col">Course Subject</th>
+                        <th scope="col">Session Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2"><strong>Sunday</strong></td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Web Programming</td>
+                        <td>Lecture</td>
+                    </tr>
+                    <tr>
+                        <td>12:30 PM - 02:30 PM</td>
+                        <td>Web Programming</td>
+                        <td>Lab Session</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tuesday</strong></td>
+                        <td>09:00 AM - 11:00 AM</td>
+                        <td>Operating Systems</td>
+                        <td>Lecture</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thursday</strong></td>
+                        <td colspan="2">11:00 AM - 01:00 PM (Office Hours)</td>
+                        <td>Academic Advising</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Rahma. All rights reserved. Built with passion & HTML5.</p>
+    </footer>
+</body>
+</html>
